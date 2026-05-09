@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "luna-nexus"
+version = "6.0.0"
+dependencies = [
+    "numpy", "requests", "aiohttp", "opencv-python", "Pillow", 
+    "psutil", "pyautogui", "pyperclip", "colorama", "pyttsx3", 
+    "SpeechRecognition", "sounddevice", "openai", "anthropic", "rich"
+]
+
+[project.scripts]
+luna = "luna_nexus.core:main"
